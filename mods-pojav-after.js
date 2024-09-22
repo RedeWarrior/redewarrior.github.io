@@ -1,4 +1,4 @@
-1.1|
+1.5|
 https://raw.githubusercontent.com/RedeWarrior/redewarrior.github.io/main/mods/pojav/after/1.7.10bspkrsCore-universal-6.12.jar|
 https://raw.githubusercontent.com/RedeWarrior/redewarrior.github.io/main/mods/pojav/after/Armourers-Workshop-1.7.10-0.48.5.jar|
 https://raw.githubusercontent.com/RedeWarrior/redewarrior.github.io/main/mods/pojav/after/CustomNPC-Plus-1.8.6.jar|
