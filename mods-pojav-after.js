@@ -1,4 +1,4 @@
-1.5|
+1.6|
 https://raw.githubusercontent.com/RedeWarrior/redewarrior.github.io/main/mods/pojav/after/1.7.10bspkrsCore-universal-6.12.jar|
 https://raw.githubusercontent.com/RedeWarrior/redewarrior.github.io/main/mods/pojav/after/Armourers-Workshop-1.7.10-0.48.5.jar|
 https://raw.githubusercontent.com/RedeWarrior/redewarrior.github.io/main/mods/pojav/after/CustomNPC-Plus-1.8.6.jar|
@@ -11,4 +11,4 @@ https://raw.githubusercontent.com/RedeWarrior/redewarrior.github.io/main/mods/po
 |
 https://raw.githubusercontent.com/RedeWarrior/redewarrior.github.io/main/mods/pojav/after/Waila-1.5.10_1.7.10.jar|
 https://raw.githubusercontent.com/RedeWarrior/redewarrior.github.io/main/mods/pojav/after/WarriorsMOD.jar|
-https://raw.githubusercontent.com/RedeWarrior/redewarrior.github.io/main/pojav/resourcepacks/DBCWARRIORS_Texture_Pack.zip@path=resourcepacks
+https://raw.githubusercontent.com/RedeWarrior/redewarrior.github.io/main/mods/pojav/after/CustomNPC-Plus-1.8.6.jar@path=resourcepacks
