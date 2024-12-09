@@ -1,4 +1,4 @@
-Baixe o novo APK no discord|
+2.5 Z|
 https://warriorsdbc.enixstudios.com/download/pojav/z/mods/+unimixins-all-1.7.10-0.1.17.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/z/mods/1.7.10bspkrsCore-universal-6.12.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/z/mods/Armourers-Workshop-1.7.10-0.48.5.jar|
@@ -14,7 +14,7 @@ https://warriorsdbc.enixstudios.com/download/pojav/z/mods/JinRyuus-HDSkins-Mod-1
 https://warriorsdbc.enixstudios.com/download/pojav/z/mods/JYearsC-v1.2.3.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/z/mods/NBArmors-2.7.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/z/mods/ninjinentities-Unofficial-1.3.5.2.jar|
-https://warriorsdbc.enixstudios.com/download/pojav/z/mods/OptiFine-1.7.10_HD_U_E7.jar|
+https://warriorsdbc.enixstudios.com/download/pojav/z/mods/OptiFine1.7.10.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/z/mods/Waila-1.5.10_1.7.10.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/z/mods/PluginMod-5.0.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/z/resourcepacks/dbcwarriors.zip@path=resourcepacks|
