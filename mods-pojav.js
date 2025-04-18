@@ -1,4 +1,4 @@
-After 2025|
+Git After 18.04|
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/+unimixins-all-1.7.10-0.1.17.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/1.7.10bspkrsCore-universal-6.12.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/Armourers-Workshop-1.7.10-0.48.5.jar|
