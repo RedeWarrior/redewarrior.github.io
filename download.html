@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DBCWarriors – Download</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(135deg, #fff5e5 0%, #ffe0b2 100%);
+      color: #333;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 1rem;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+      padding: 2rem 1.5rem;
+      width: 100%;
+      max-width: 380px;
+      text-align: center;
+    }
+    .titulo {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #e53935;
+      letter-spacing: 1px;
+    }
+    .mensagem {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+      line-height: 1.4;
+    }
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .botoes a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 0.9rem 1.2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      color: #fff;
+    }
+    .botoes a img {
+      height: 24px;
+      margin-right: 0.6rem;
+    }
+    .botoes a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .btn-alternativo {
+      background-color: #e53935;
+    }
+    .btn-googleplay {
+      background-color: #000;
+    }
+    .aviso {
+      font-size: 0.9rem;
+      color: #b30b0b;
+      line-height: 1.4;
+      text-align: left;
+      margin-bottom: 0.5rem;
+    }
+    .recomendacao {
+      font-size: 0.95rem;
+      color: #2e7d32;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .modal {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 90%;
+      max-width: 320px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .modal h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #e53935;
+    }
+    .modal p {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+      line-height: 1.4;
+    }
+    .modal-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .modal-buttons button {
+      padding: 0.8rem 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+    .modal-buttons button:hover {
+      transform: translateY(-2px);
+    }
+    .btn-modal-google {
+      background-color: #000;
+      color: #fff;
+    }
+    .btn-modal-alternativo {
+      background-color: #e53935;
+      color: #fff;
+    }
+
+    @media (min-width: 480px) {
+      .titulo { font-size: 2rem; }
+      .mensagem { font-size: 1.1rem; }
+      .botoes a { font-size: 1.05rem; }
+      .botoes a img { height: 28px; }
+      .aviso { font-size: 0.95rem; }
+      .recomendacao { font-size: 1rem; }
+      .modal h2 { font-size: 1.3rem; }
+      .modal p { font-size: 1rem; }
+      .modal-buttons button { font-size: 1.05rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="titulo">DBCWarriors</h1>
+      <p class="mensagem">Baixe ou atualize nosso aplicativo agora mesmo.</p>
+
+      <div class="botoes">
+        <a
+          class="btn-alternativo"
+          href="https://www.redewarriors.online/mobile"
+          target="_blank"
+          rel="noopener"
+        >
+          Download Alternativo (Recomendado)
+        </a>
+
+        <a
+          id="googleBtn"
+          class="btn-googleplay"
+          href="#"
+        >
+          <img src="play.png" alt="Google Play" />
+          Download Google Play
+        </a>
+      </div>
+
+      <p class="aviso">
+        ⚠️ A atualização no Google Play pode levar de 2 a 7 dias a mais do que o Download Alternativo.
+      </p>
+      <p class="recomendacao">
+        Recomendamos usar o Download Alternativo para obter a versão mais recente imediatamente.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal">
+      <h2>Atenção!</h2>
+      <p>
+        A atualização no Google Play pode demorar até 7 dias úteis para ficar disponível.<br />
+        Deseja continuar pelo Google Play ou usar o Download Alternativo agora mesmo?
+      </p>
+      <div class="modal-buttons">
+        <button id="usarAlternativo" class="btn-modal-alternativo">
+          Baixar Alternativo
+        </button>
+        <button id="continuarGoogle" class="btn-modal-google">
+          Continuar pelo Google Play
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const googleBtn = document.getElementById('googleBtn');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const continuarGoogle = document.getElementById('continuarGoogle');
+    const usarAlternativo = document.getElementById('usarAlternativo');
+
+    googleBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      modalOverlay.style.display = 'flex';
+    });
+
+    continuarGoogle.addEventListener('click', function() {
+      window.location.href = 'https://play.google.com/store/apps/details?id=net.enixstudios.redewarriors';
+    });
+
+    usarAlternativo.addEventListener('click', function() {
+      window.location.href = 'https://www.redewarriors.online/mobile';
+    });
+
+    // Fechar modal se clicar fora da caixa
+    modalOverlay.addEventListener('click', function(e) {
+      if (e.target === modalOverlay) {
+        modalOverlay.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
