@@ -1,4 +1,4 @@
-Git After 2.05|
+Git After 10.07|
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/+unimixins-all-1.7.10-0.1.17.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/1.7.10bspkrsCore-universal-6.12.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/Armourers-Workshop-1.7.10-0.48.5.jar|
@@ -8,6 +8,7 @@ https://warriorsdbc.enixstudios.com/download/pojav/after/mods/Dbc Warriors V1.ja
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/Dragon-Block.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/entityculling-1.6.4-mc1.7.10.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/JBRA.jar|
+https://warriorsdbc.enixstudios.com/download/pojav/after/mods/geckolib3-v3.0.0-warriors.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/JFamilyC-v1.2.18.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/jinryuujrmcwarriors.jar|
 https://warriorsdbc.enixstudios.com/download/pojav/after/mods/JinRyuus-HDSkins-Mod-1.7.10-v1.3.1.jar|
