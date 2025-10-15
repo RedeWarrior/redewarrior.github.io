@@ -15,9 +15,10 @@ https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/mods/JinRyuus-HDSkins
 https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/mods/JYearsC-v1.2.3.jar|
 https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/mods/NBArmors-2.7.jar|
 https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/mods/ninjinentities-Unofficial-1.3.5.2.jar|
-https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/mods/OptiFine_1.7.10_HD_U_E7.jar|
+https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/mods/OptiFine-1.7.10_HD_U_E7.jar|
 https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/mods/Waila-1.5.10_1.7.10.jar|
 https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/mods/PluginMod-5.0.jar|
+https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/mods/Minebot-0.3.0.jar|
 https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/resourcepacks/dbcwarriors.zip@path=resourcepacks|
 https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/mainmenu.json@path=config/CustomMainMenu|
 https://cdn.cavalocarbonizado.xyz/download/pojav/unlimited/options.txt@path=mods/..|
