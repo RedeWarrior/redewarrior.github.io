@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Download — DBC Warriors</title>
+  <style>
+    :root{
+      --bg:#0b0b0b; /* quase preto */
+      --panel:#111; 
+      --accent:#ff7a00; /* laranja */
+      --muted:#bdbdbd;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#070707);
+      color:var(--muted);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .card{
+      width:100%;
+      max-width:720px;
+      background:var(--panel);
+      border-radius:var(--radius);
+      box-shadow:0 6px 30px rgba(0,0,0,0.6);
+      padding:28px;
+      box-sizing:border-box;
+      display:flex;
+      gap:24px;
+      align-items:center;
+    }
+    .meta{
+      flex:1 1 320px;
+      min-width:0;
+    }
+    .logo{
+      width:92px;
+      height:92px;
+      border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),#ff8f3a);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#111;
+      font-size:22px;
+      flex:0 0 92px;
+      box-shadow:0 4px 20px rgba(255,122,0,0.12) inset;
+    }
+    h1{
+      margin:0 0 6px 0;
+      color: #fff;
+      font-size:20px;
+      line-height:1.1;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+    }
+    p.lead{
+      margin:6px 0 14px 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+    ul.features{
+      margin:0 0 16px 0;
+      padding-left:18px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .actions{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    a.btn-download{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      background:var(--accent);
+      color:#0b0b0b;
+      text-decoration:none;
+      padding:12px 16px;
+      border-radius:12px;
+      font-weight:600;
+      box-shadow:0 6px 20px rgba(255,122,0,0.16);
+    }
+    a.btn-download:active{transform:translateY(1px)}
+    .info-small{
+      font-size:12px;
+      color: #bdbdbd;
+    }
+    .right{
+      text-align:right;
+      min-width:160px;
+    }
+    @media (max-width:640px){
+      .card{flex-direction:column;align-items:stretch;padding:20px}
+      .right{text-align:left;width:100%}
+      .logo{margin:0 auto}
+    }
+    footer.note{
+      margin-top:14px;
+      font-size:12px;
+      color:#8f8f8f;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-label="Área de download">
+    <div  aria-hidden="true"><image class="logo"  src="https://i.imgur.com/ryMgcJK.gif"></div>
+
+    <div class="meta">
+      <h1>DBC Warriors</h1>
+      <p class="lead">Caso você tenha problemas, instale esse apk e nos conte no suporte se resolveu seu problema.</p>
+
+      <ul class="features">
+        <li>Muitos crashs corrigidos</li>
+        <li>Carregando infinito corrigido</li>
+        <li>Problemas internos e melhorais</li>
+      </ul>
+
+      <div class="actions">
+        <a class="btn-download" href="http://cdn.cavalocarbonizado.xyz/download/dbcwarriors.apk" download="dbcwarriors.apk" rel="nofollow noopener noreferrer" aria-label="Baixar DBC Warriors">⬇️ Baixar APK</a>
+        <div class="info-small">Tamanho aprox.: 144 MB</div>
+      </div>
+
+      <footer class="note">Versão de teste, tentativa de resolver problemas especificos.</footer>
+    </div>
+
+    <div class="right" aria-hidden="false">
+      <div style="background:#0a0a0a;padding:14px;border-radius:10px;"> 
+        <div style="font-size:13px;color:#fff;font-weight:600">Versão</div>
+        <div style="margin-top:6px;color:var(--muted);font-size:13px">24.11.2025</div>
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:12px 0">
+        <div style="font-size:13px;color:#fff;font-weight:600">Arquivo</div>
+        <div style="margin-top:6px;color:var(--muted);font-size:13px">dbcwarriors.apk</div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('.btn-download');
+      if(!btn) return;
+      function confirmDesktop(e){
+        if(window.matchMedia('(min-width:641px)').matches){
+          const ok = confirm('Deseja iniciar o download do APK agora?');
+          if(!ok){ e.preventDefault(); }
+        }
+      }
+      btn.addEventListener('click', confirmDesktop);
+    })();
+  </script>
+</body>
+</html>
