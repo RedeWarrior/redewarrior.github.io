@@ -147,18 +147,5 @@
     </div>
   </main>
 
-  <script>
-    (function(){
-      const btn = document.querySelector('.btn-download');
-      if(!btn) return;
-      function confirmDesktop(e){
-        if(window.matchMedia('(min-width:641px)').matches){
-          const ok = confirm('Deseja iniciar o download do APK agora?');
-          if(!ok){ e.preventDefault(); }
-        }
-      }
-      btn.addEventListener('click', confirmDesktop);
-    })();
-  </script>
 </body>
 </html>
