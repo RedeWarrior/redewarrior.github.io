@@ -6,29 +6,29 @@
   <title>Solicitação de Exclusão de Dados</title>
   <style>
     :root{
-      --bg:#0c0f17;
-      --card:#111726;
-      --accent:#4ade80;
-      --accent2:#60a5fa;
-      --text:#e2e8f0;
+      --bg:#060607;         /* fundo geral mais preto */
+      --card:#0b0b0e;       /* cartão escuro */
+      --accent:#ff2c2c;     /* verde */
+      --accent2:#000000;    /* preto (substitui azul) */
+      --text:#e6eef6;
       --muted:#94a3b8;
       font-family: Inter, sans-serif;
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
-    body{background:var(--bg);color:var(--text);padding:20px;display:flex;justify-content:center}
+    body{background:var(--bg);color:var(--text);padding:20px;display:flex;justify-content:center;-webkit-font-smoothing:antialiased}
 
     .container{
       width:100%;
-      max-width:650px;
+      max-width:720px;
       background:var(--card);
       padding:28px;
-      border-radius:20px;
-      box-shadow:0 12px 40px rgba(0,0,0,0.45);
+      border-radius:16px;
+      box-shadow:0 12px 40px rgba(0,0,0,0.6);
       display:flex;
       flex-direction:column;
-      gap:24px;
-      border:1px solid rgba(255,255,255,0.05);
+      gap:20px;
+      border:1px solid rgba(255,255,255,0.04);
     }
 
     h1{
@@ -46,10 +46,10 @@
     }
 
     .emailBox{
-      background:rgba(255,255,255,0.03);
+      background:rgba(255,255,255,0.02);
       padding:18px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,0.05);
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.03);
       display:flex;
       flex-direction:column;
       gap:12px;
@@ -69,55 +69,57 @@
       font-size:14px;
     }
     .copyBtn{
-      background:rgba(255,255,255,0.05);
+      background:rgba(255,255,255,0.03);
       color:var(--text);
-      border:1px solid rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.06);
     }
     .sendBtn{
       background:linear-gradient(90deg,var(--accent),var(--accent2));
-      color:#000;
+      color:#fff; /* branco para legibilidade sobre o gradiente */
+      border:1px solid rgba(0,0,0,0.2);
     }
 
     .messageBox{
-      background:rgba(255,255,255,0.02);
+      background:rgba(255,255,255,0.01);
       padding:16px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,0.05);
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.03);
     }
 
     .instructions{
       font-size:14px;
       color:var(--muted);
       line-height:1.5;
-      background:rgba(255,255,255,0.02);
+      background:rgba(255,255,255,0.01);
       padding:16px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,0.05);
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.03);
     }
 
     pre{
       white-space:pre-wrap;
       font-size:13px;
       color:var(--muted);
-      line-height:1.4;
+      line-height:1.45;
     }
 
     .toast{
       position:fixed;
       left:50%;bottom:24px;
       transform:translateX(-50%);
-      background:#0b1628;
+      background:#071018;
       padding:10px 16px;
       border-radius:12px;
       font-size:14px;
       display:none;
-      border:1px solid rgba(255,255,255,0.05);
-      box-shadow:0 8px 30px rgba(0,0,0,0.4);
+      border:1px solid rgba(255,255,255,0.04);
+      box-shadow:0 8px 30px rgba(0,0,0,0.6);
     }
 
-    @media(max-width:480px){
+    @media(max-width:600px){
       .emailValue{font-size:17px}
       h1{font-size:20px}
+      .container{padding:18px}
     }
   </style>
 </head>
@@ -126,16 +128,16 @@
   <div class="container">
     <div>
       <h1>Solicitação de Exclusão de Dados</h1>
-      <p class="desc">Para apagar sua conta e todos os dados associados, envie uma solicitação para o e‑mail abaixo.</p>
+      <p class="desc">Para apagar sua conta e todos os dados associados, envie uma solicitação para o e-mail abaixo. Nós excluímos as informações mais sensíveis como o e-mail associado à conta e a senha. E desvinculamos a conta conforme solicitado.</p>
     </div>
 
     <div class="emailBox">
-      <div class="emailLabel">E‑mail responsável</div>
+      <div class="emailLabel">E-mail responsável</div>
       <div class="emailValue" id="emailToCopy">devrandom00int@gmail.com</div>
 
       <div class="actions">
-        <button class="copyBtn" id="copyBtn">Copiar e‑mail</button>
-        <button class="sendBtn" id="mailtoBtn">Abrir e‑mail</button>
+        <button class="copyBtn" id="copyBtn">Copiar e-mail</button>
+        <button class="sendBtn" id="mailtoBtn">Abrir e-mail</button>
       </div>
     </div>
 
@@ -144,10 +146,11 @@
       <pre>Assunto: Exclusão de dados
 
 Olá,
-Gostaria de solicitar a exclusão completa da minha conta e de todos os dados associados.
+
+Venho por meio deste solicitar a exclusão completa da minha conta e de todos os dados associados.
 
 Nickname no jogo: <seu_nickname>
-E‑mail da conta: <seu_email>
+E-mail da conta: <seu_email>
 Informações extras (opcional): <detalhes adicionais>
 
 Aguardo confirmação da conclusão do processo.
@@ -156,9 +159,8 @@ Obrigado.</pre>
 
     <div class="instructions">
       <strong>Importante:</strong><br>
-      A solicitação deve ser enviada do mesmo e‑mail que está vinculado à conta. Esse procedimento garante a segurança e impede exclusões não autorizadas.
-      <br><br>
-      Inclua seu <strong>nickname</strong> e o <strong>e‑mail associado</strong>, além de qualquer informação adicional que facilite a identificação da conta.
+      A solicitação deve ser enviada do e-mail vinculado à conta.<br><br>
+      Nós garantimos a exclusão das informações sensíveis( email | senha | ip ) mencionadas e a desvinculação da conta assim que a solicitação for verificada.
     </div>
   </div>
 
@@ -179,13 +181,27 @@ Obrigado.</pre>
       try{
         await navigator.clipboard.writeText(emailEl.textContent.trim());
         showToast();
-      }catch{}
+      }catch{
+        // fallback
+        const range = document.createRange();
+        range.selectNode(emailEl);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        try{
+          document.execCommand('copy');
+          showToast();
+        }catch{}
+        sel.removeAllRanges();
+      }
     }
 
     mailtoBtn.onclick = ()=>{
-      const to = emailEl.textContent.trim();
+      const to = encodeURIComponent(emailEl.textContent.trim());
       const subject = encodeURIComponent('Exclusão de dados');
-      const body = encodeURIComponent('Olá,%0AQuero solicitar a exclusão completa da minha conta e dados.%0A%0ANickname:%0AE‑mail:%0A');
+      const body = encodeURIComponent(
+        'Olá,%0A%0AVenho por este e-mail solicitar a exclusão completa da minha conta e de todos os dados associados.%0A%0APor favor, excluam especialmente o e-mail associado e a senha, e desvinculem a conta.%0A%0ANickname no jogo:%0AE-mail da conta:%0A%0AInformações extras (opcional):%0A%0AObrigado.'
+      );
       location.href = `mailto:${to}?subject=${subject}&body=${body}`;
     }
   </script>
